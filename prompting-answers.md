@@ -46,11 +46,43 @@ Before we touch the keyboard, I want to see your blueprint. Imagine you are buil
 
 1. Which piece of data about a player would stay the same forever (requiring a "safe"), and which might change as the player plays (requiring a "box")?
 
-*Answer here...*
+*Account / User ID would require a "safe" because it would never change, while current health would require a "box" because it fluctuates.*
 
 3. If you had to explain the `=` symbol to a non-coder using the analogy of a "bucket" and a "ball," how would you describe it?
 
-*Answer here...*
+*Gemini said
+To explain the = symbol (the assignment operator) to a non-coder, you have to flip their mathematical brain upside down. In math, = means "these two things are currently the same." In coding, = is an action.
+
+Using the bucket and ball analogy, here is how it works:
+
+1. The Bucket is the Variable
+Think of a bucket with a label on the side, like "PlayerScore" or "Username." This bucket is your variable. It’s a container designed to hold exactly one thing at a time.
+
+2. The Ball is the Data
+The ball represents the value or the piece of data you want to store (like the number 10 or the name "Alex").
+
+3. The = is the Act of Dropping the Ball
+In coding, the = symbol is the hand that picks up a ball and drops it into the bucket.
+
+PlayerScore = 10
+
+When a coder writes the line above, they aren't making a statement of fact; they are giving a command: "Take the ball labeled '10' and put it inside the bucket labeled 'PlayerScore'."
+
+The Rules of the Bucket
+To really understand how = works, there are two "physical" rules in this analogy:
+
+The Old Ball Vanishes: If there was already a ball in the bucket (say, a 5), and you use the = to drop in a 10, the 5 instantly disappears. The bucket can only hold one ball at a time.
+
+Right to Left: The action always moves from the right side to the left side. You look at the ball on the right, and move it into the bucket on the left.
+
+Why this matters
+If you tell a non-coder x = x + 1, their math teacher would scream because that's an impossible equation. But in "Bucket Logic," it makes perfect sense:
+
+Look at the ball currently in the bucket (x).
+
+Add 1 to it to create a new ball.
+
+Use the = to drop that new ball back into the bucket, replacing the old one.
 
 ---
 
@@ -73,7 +105,9 @@ PROMPT: Now ask Gemini to give you three examples of JavaScript string variables
 
 ```javascript
 // Write the example code Gemini gives you inside this code block
-
+const playerUserName = "DragonSlayer99";
+const favoriteGameGenre = "Platformer";
+const currentLevelName = "Mystic Forest";
 
 ```
 
@@ -82,9 +116,10 @@ To start your **Final Task**, how would you write a **single-line comment** at t
 
 Add your answer to the JavaScript code block below.
 
+
 ```javascript
 // Write your answer below this JavaScript comment
-
+// Lead developer: Charles Petoskey
 
 ```
 
